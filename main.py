@@ -1,5 +1,4 @@
-api_id = "a07bc512"
-api_key = "4387041f011a9b5d6e5a2f17cb3d53f6"
+
 import requests
 import json
 from datetime import datetime
@@ -11,8 +10,8 @@ WEIGHT_KG = "52"
 HEIGHT_CM = "143"
 AGE = "18"
 
-APP_ID = "a07bc512"
-API_KEY = "4387041f011a9b5d6e5a2f17cb3d53f6"
+APP_ID = "You can get this from nutritionix api"
+API_KEY = "You can get this from nutritionix api"
 
 env_var = os.environ
 pprint.pprint(dict(env_var),width=1)
@@ -45,10 +44,8 @@ for results in result["exercises"]:
 
     now = datetime.now()
     time_now = now.strftime("%H:%M:%S")
-    api_id = "https://api.sheety.co/d8cfb994030a153045202431f162a33d/myworkout/sheet1"
+    api_id = "You can get this from sheety api"
 
-    # workout_row = requests.get(url= api_id).text
-    # print(json.loads(workout_row))
 
     row_2 = {
         "sheet1":{
